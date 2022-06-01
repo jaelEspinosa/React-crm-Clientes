@@ -5,7 +5,7 @@ const Layout = () => {
   const location = useLocation()
   const urlActual = location.pathname
   
-  console.log('estamos en',location)
+  /* console.log('estamos en',location) */
   return (
   <div className='md:flex md:min-h-screen '>
       <div className='md:w-1/4 bg-gray-700 px-5 py-10 '>
