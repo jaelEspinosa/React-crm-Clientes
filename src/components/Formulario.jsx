@@ -41,7 +41,7 @@ const Formulario = () => {
            /* console.log(resultado) */
            navigate('/clientes')
         }catch(error){
-           /* console.log ('resultado',error) */
+           console.log ('resultado',error)
         }
     }
   return (

@@ -6,6 +6,7 @@ import EditarCliente from './paginas/EditarCliente'
 import Inicio from './paginas/inicio'
 
 import NuevoCliente from './paginas/NuevoCliente'
+import VerCliente from './paginas/VerCliente'
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
                     <Route index element={<Inicio/>}/>
                     <Route path='nuevo' element={<NuevoCliente/>}/>
                     <Route path='editar/:id' element={<EditarCliente/>}/>
+                    <Route path=':id' element={<VerCliente/>}/>
               </Route>
           </Routes>
 

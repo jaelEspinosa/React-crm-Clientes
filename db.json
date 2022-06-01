@@ -39,6 +39,30 @@
       "telefono": "752321456",
       "notas": "Es mi compañera de camino",
       "id": 6
+    },
+    {
+      "nombre": "Adrian Espinosa Oviedo",
+      "empresa": "Sedona",
+      "email": "adri@gmail.com",
+      "telefono": "622564512",
+      "notas": "Es el cocinero del restaurante",
+      "id": 7
+    },
+    {
+      "nombre": "Abel Cabezon Romano",
+      "empresa": "upgrade",
+      "email": "abelcabezonromano@bootcamp.com",
+      "telefono": "654213212",
+      "notas": "",
+      "id": 8
+    },
+    {
+      "nombre": "Jesus Romero De La Puebla",
+      "empresa": "El Parraque",
+      "email": "jesusromepue@gmail.com",
+      "telefono": "",
+      "notas": "Es un paleto del Campo",
+      "id": 9
     }
   ]
 }

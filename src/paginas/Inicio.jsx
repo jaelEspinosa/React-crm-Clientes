@@ -1,31 +1,40 @@
 import { useEffect, useState } from 'react'
 import Clientes from '../components/Clientes'
+import Spinner from '../components/spinner'
 
 const inicio = () => {
 const [clientes,setClientes]= useState([])
+const [cargando, setCargando]=useState(false)
   useEffect(()=>{
+      
+      
 
       const obtenerClientesAPI= async ()=>{
+        setCargando(true)
+        
         try {
           const url = 'http://localhost:4000/clientes'
           const respuesta = await fetch(url)
           const resultado = await respuesta.json()
 
-          /* console.log('La respuesta es',respuesta)
-          console.log('El resultado es',resultado) */
           setClientes(resultado)
-          console.log(resultado)
-        }catch{
+                 
+        }catch (error){
           console.log(error)
         }
+        setCargando(false)
       }
       obtenerClientesAPI()
+     
+      
   },[])
 
   return (
     <div >
-     <h1 className='font-black text-4xl text-blue-900'>Clientes</h1>
-        <p className = 'mt-3'>Administra tus clientes</p>
+    {cargando ? <Spinner/> : (
+      <>
+      <h1 className='font-black text-4xl text-blue-900'>Clientes</h1>
+        <p className = 'mt-3 text-2xl text-gray-600'>Administra tus clientes</p>
         
         
         <table className='w-full mt-5 table-auto shadow bg-white'>
@@ -47,6 +56,9 @@ const [clientes,setClientes]= useState([])
         </tbody>
            
         </table>
+      </>
+    )}
+     
    
     </div>
   )
