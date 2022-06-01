@@ -1,0 +1,44 @@
+{
+  "clientes": [
+    {
+      "nombre": "José Antonio Espinosa Lucia",
+      "empresa": "Upgrade",
+      "email": "jaelespinosa@gmail.com",
+      "telefono": "659795230",
+      "notas": "Academia de desarrollo web",
+      "id": 2
+    },
+    {
+      "nombre": " Antonio Espinosa Viñas",
+      "empresa": "ausyco",
+      "email": "jaelespinosa@gmail.com",
+      "telefono": "659795230",
+      "notas": "Empresa de banca",
+      "id": 3
+    },
+    {
+      "nombre": "Ramon Mendoza",
+      "empresa": "R. Madrid C.F.",
+      "email": "ramonmendoza@gmail.com",
+      "telefono": "659754521",
+      "notas": "Presidente emblemático del Real Madrid 14 veces Campeón de Europa ",
+      "id": 4
+    },
+    {
+      "nombre": "Roberto Espinosa Velazaquez",
+      "empresa": "Bomberos de la C.Madrid",
+      "email": "robertEspinosa@gmail.com",
+      "telefono": "675231245",
+      "notas": "Es un Bombero Torero",
+      "id": 5
+    },
+    {
+      "nombre": "Maria Teresa Oviedo Pérez",
+      "empresa": "casa",
+      "email": "mariateresa@gmail.com",
+      "telefono": "752321456",
+      "notas": "Es mi compañera de camino",
+      "id": 6
+    }
+  ]
+}
