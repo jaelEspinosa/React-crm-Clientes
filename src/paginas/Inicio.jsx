@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Clientes from '../components/Clientes'
-import Spinner from '../components/spinner'
+import Spinner from '../components/Spinner'
 
 const inicio = () => {
 const [clientes,setClientes]= useState([])
