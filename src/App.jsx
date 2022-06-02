@@ -1,10 +1,9 @@
-import { useState } from 'react'
+
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 import Layout from './layout/Layout'
 import EditarCliente from './paginas/EditarCliente'
-import Inicio from './paginas/inicio'
-
+import Inicio from './paginas/Inicio'
 import NuevoCliente from './paginas/NuevoCliente'
 import VerCliente from './paginas/VerCliente'
 
