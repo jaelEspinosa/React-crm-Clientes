@@ -1,11 +1,11 @@
 {
   "clientes": [
     {
-      "nombre": "José Antonio Espinosa Lucia",
+      "nombre": "José Antonio Espinosa Lucía",
       "empresa": "Upgrade",
       "email": "jaelespinosa@gmail.com",
       "telefono": "659795230",
-      "notas": "Academia de desarrollo web",
+      "notas": "Academia de desarrollo web y otra materias",
       "id": 2
     },
     {
@@ -49,20 +49,12 @@
       "id": 7
     },
     {
-      "nombre": "Abel Cabezon Romano",
+      "nombre": "Abel Cabeza Román",
       "empresa": "upgrade",
-      "email": "abelcabezonromano@bootcamp.com",
+      "email": "abelcabeza@gmail.com",
       "telefono": "654213212",
-      "notas": "",
+      "notas": "Es profe en Upgrade hub",
       "id": 8
-    },
-    {
-      "nombre": "Jesus Romero De La Puebla",
-      "empresa": "El Parraque",
-      "email": "jesusromepue@gmail.com",
-      "telefono": "",
-      "notas": "Es un paleto del Campo",
-      "id": 9
     }
   ]
 }

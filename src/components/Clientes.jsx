@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const Clientes = ({cliente}) => {
+const Clientes = ({cliente, handleEliminar}) => {
   const{nombre, empresa, email, telefono, notas, id}= cliente
   const navigate = useNavigate()
   return (
@@ -24,12 +24,14 @@ const Clientes = ({cliente}) => {
         <button 
         type='button'
         className='bg-blue-600 hover:bg-blue-800 transition duration-300 block w-full text-white p-2 uppercase font-bold text-xs mt-3 rounded-md'
+        onClick={()=> navigate(`/clientes/editar/${id}`)}
         >Editar</button>
        
        
         <button 
         type='button'
         className='bg-red-600 hover:bg-red-800 transition duration-300 selection:block w-full text-white p-2 uppercase font-bold text-xs mt-3 rounded-md'
+        onClick={()=> handleEliminar(id)}
         >Eliminar</button>  
       </td>
       </tr>

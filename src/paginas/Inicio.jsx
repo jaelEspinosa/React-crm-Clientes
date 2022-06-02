@@ -28,6 +28,24 @@ const [cargando, setCargando]=useState(false)
      
       
   },[])
+  const handleEliminar = async id => {
+    const confirmar = confirm('Deseas Eliminar el Registro?')
+    if(confirmar){
+      try{
+            const url= `http://localhost:4000/clientes/${id}`
+            console.log
+            const respuesta = await fetch(url, { 
+              method:'DELETE'         
+          })
+           await respuesta.json()
+       const arrayClientes = clientes.filter(cliente => cliente.id !== id)
+       setClientes(arrayClientes)
+      }catch(error){
+           console.log(error)
+      }     
+      
+    }
+  }
 
   return (
     <div >
@@ -49,8 +67,10 @@ const [cargando, setCargando]=useState(false)
               </thead>
         <tbody>
                     {clientes.map(cliente=>(
-                <Clientes cliente ={cliente}
+                <Clientes 
+                  cliente ={cliente}
                   key={cliente.id}
+                  handleEliminar={handleEliminar}
                 />
                 ))}
         </tbody>
