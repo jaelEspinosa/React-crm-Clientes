@@ -1,4 +1,4 @@
-
+import { useState } from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 import Layout from './layout/Layout'
@@ -12,7 +12,9 @@ function App() {
 
   return (
     <BrowserRouter>
-          <Routes>          
+          
+          <Routes>
+              <Route path='/' element={<Layout/>}/>          
               <Route path='/clientes' element={<Layout/>}>
                     <Route index element={<Inicio/>}/>
                     <Route path='nuevo' element={<NuevoCliente/>}/>
