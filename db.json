@@ -47,14 +47,6 @@
       "telefono": "622564512",
       "notas": "Es el cocinero del restaurante",
       "id": 7
-    },
-    {
-      "nombre": "Abel Cabeza Román",
-      "empresa": "upgrade",
-      "email": "abelcabeza@gmail.com",
-      "telefono": "654213212",
-      "notas": "Es profe en Upgrade hub",
-      "id": 8
     }
   ]
 }
