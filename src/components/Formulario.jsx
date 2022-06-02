@@ -3,7 +3,7 @@ import {Formik, Form, Field} from 'formik'
 import * as Yup from 'yup'
 import Errors from './Errors'
 import { useNavigate, useParams } from 'react-router-dom'
-import Spinner from './spinner'
+import Spinner from './Spinner'
 
 const Formulario = ({cliente, cargando}) => {
     const { id } = useParams()
